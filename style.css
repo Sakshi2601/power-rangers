@@ -1,0 +1,214 @@
+body{
+    padding:0;
+    margin:0;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(243, 243, 151) );
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.parent-navbar
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ul-list
+{
+    display: flex;
+}
+
+.ul-list li
+{
+    color: white;
+    list-style-type: none;
+    padding:0px 10px;
+}
+
+.ul-list li:hover
+{
+    font-weight: bold;
+}
+
+.intro
+{
+    width:100vw;
+    height:91vh;
+    background-image: url('power.jpg'); width: 100%;;
+    background-size: cover;
+    color:rgb(10, 10, 10);
+    text-align:center;
+    padding-top:80vh;
+}
+
+.intro h1{
+    margin-top: 200px;
+    font-size: 75px;
+    margin-bottom:10px;
+}
+
+.btn
+{
+    width:15%;
+    padding:12px;
+    font-size:15px;
+    background-color: black;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top:15px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(83, 82, 82);
+    color:white;
+}
+
+/* Property will Be define for (0-500px) */
+
+@media (max-width:500px)
+{
+    .intro h1
+    {
+        font-size: 30px;
+    }
+
+    .intro{
+        padding-top:15vh;
+    }
+
+    .btn{
+        width:80%;
+    }
+}
+
+.card
+{
+    width:320px;
+    border:1px solid rgb(99, 95, 95);
+    border-radius: 10px;
+    padding:8px;
+    cursor: pointer;
+}
+
+.card:hover
+{
+    box-shadow:0px 0px 20px grey;
+    transition: 0.5s ease-in-out;
+}
+
+.card h3{
+    margin:9px 0px;
+}
+
+.card p{
+    margin:8px 0px;
+    text-align: justify;
+}
+
+.parent-image
+{
+    width:320px;
+    height:200px;
+    box-sizing: border-box;
+}
+
+.parent-image img{
+    width:100%;
+    height:100%;
+    border-radius: 12px;
+}
+
+.order
+{
+    width:100%;
+    padding:10px;
+    background-color: black;
+    color:white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.parent-card
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+@media (max-width:350px)
+{
+    .card{
+        width:250px;
+    }
+
+    .parent-image
+    {
+        width:250px;
+        height:150px;
+    }
+
+    .yus-card{
+        width:250px;
+    }
+}
+
+@media (max-width:995px)
+{
+    .card{
+        margin-bottom: 20px;
+    }
+}
+
+.yus-parent
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.yus-card
+{
+    width:360px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    border:1px solid rgb(0, 0, 0);
+    padding:25px 15px;
+}
+
+.yus-card h3{
+    margin:9px 0px;
+}
+
+.yus-card p{
+    margin:8px 0px;
+}
+
+.menu-parent
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu
+{
+    margin-bottom:20px;
+}
+
+.footer
+{
+    background-color: black;
+    color:white;
+    padding:30px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
